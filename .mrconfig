@@ -1,2 +1,8 @@
 [building-groovy-libraries]
-checkout = git clone git@github.com:gradle-guides/building-groovy-libraries.git
+checkout = git clone git@github.com:tobe-null/building-groovy-libraries.git
+
+[gs-template]
+checkout = git clone git@github.com:tobe-null/gs-template.git
+
+[topical-template]
+checkout = git clone git@github.com:tobe-null/topical-template.git
