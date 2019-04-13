@@ -1,0 +1,13 @@
+# mr-managed repositories
+building-groovy-libraries/
+
+# nginx
+nginx.pid
+
+# Vim
+*.sw?
+
+.gradle
+build
+.idea
+*.iml

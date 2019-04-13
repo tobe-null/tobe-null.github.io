@@ -1,0 +1,2 @@
+[building-groovy-libraries]
+checkout = git clone git@github.com:gradle-guides/building-groovy-libraries.git
