@@ -1,0 +1,6 @@
+language: java
+script: git push -f https://${GH_TOKEN}@github.com/tobe-null/tobe-null.github.io
+  master 2>&1 | sed "s/${GH_TOKEN}/[secure]/"
+env:
+  global:
+    secure: KSr0zPYBHdaWfa4ILIUEcW1OEI0h6Bwq1U3k+nnIK907Qe0USTzjMw0pNGD1CJiI7KvfSE8G9KQqQnxxlt2PIwBQrXKRGFlkN7o6+dEZJ5HaiJgGYJFvYTgCNoX14xKC8L016I6VHewLVQag66M7/tOHID291EfO6IsUD6gSYkKYlyA4/RQQ8W7gjLPNpT2EWZASQ3jPnQroZP0MANwraB8AH+zIRaK4AJGjty8vh9ao4Dkwhys9X4ctffMMpvfj6IUSej9DMyBuoSGAa2VySnjoLMJSYytjD4kBxYlezADeyrDc8xT+LaNn6FKnNv/FSMUmvUSFaZ7PAQzP9hZaJAGOdhcBYcIcdq4kS7GqO21+y6QXx2RzPotah7HNfUUDsO3yEKOkCFhGWkDkEU5UU5moTA6dFYbAno10KBsQt6RPYI8fu5CN3DMfHVn+sZS2lSGNkxddlgmQPEm/DYGYEhiN2Z9H5O3MeiYHrzagf9Hzgwl5S7DrDhecp2AptG3fVLPHBqGZynfi2eUllnJ31ryAmIyq1aDil6W1RgfArZfPzCt9uKaHG1MqFQIE9YtFGecgnz5uGWdLVjEJZ5SrrFTcIe1hZpiVT0n8Qlv0GTPGVnPQpwoDH/NyaHiXzLEZ/Y14yhjt2FPObwJcFjQ2ee6qwL+z8LV5NTqKXqa9DFc=

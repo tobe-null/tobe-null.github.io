@@ -20,7 +20,7 @@ class CreateGradleGuide extends DefaultTask {
 
         private GuideType(final String name) {
             templateName = name
-            template = "https://github.com/gradle-guides/${name}".toURI()
+            template = "https://github.com/tobe-null/${name}".toURI()
         }
 
         final String templateName
@@ -52,7 +52,7 @@ class CreateGradleGuide extends DefaultTask {
     String issue
 
     File repoBaseDir = new File(project.buildDir, 'new-guide-repositories')
-    String guideOrgUrl = 'https://github.com/gradle-guides'
+    String guideOrgUrl = 'https://github.com/tobe-null'
 
     @Option(option = "guide-name", description = "Name of guide to be created")
     @Input
@@ -72,7 +72,7 @@ class CreateGradleGuide extends DefaultTask {
     }
 
     URI getGitHubURI() {
-        "https://github.com/gradle-guides/${getGuideSlug()}".toURI()
+        "https://github.com/tobe-null/${getGuideSlug()}".toURI()
     }
 
     URI getArchiveURI() {
@@ -238,7 +238,7 @@ build
 
     private void createRepoOnGitHub(final File repoDir, final URI uri) {
         GitHub gh = GitHub.connectUsingOAuth(getGitHubAuthToken())
-        gh.getOrganization('gradle-guides').
+        gh.getOrganization('tobe-null').
             createRepository(getGuideSlug()).
             description(getGuideName()).
             issues(true).
